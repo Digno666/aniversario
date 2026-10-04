@@ -62,7 +62,7 @@ for(let i=0;i<4200;i++){
 // Estrellas de fondo
 const S=[];for(let i=0;i<220;i++)S.push({x:R(),y:R(),s:R()*1.3+.3,p:R()*6.28});
 const WS=[
-['Te amo','Eres la razón de mis mejores sonrisas. Te amo más de lo que cabe en esta galaxia.', ''],
+['Te amo','Eres la razón de mis mejores sonrisas. Te amo más de lo que cabe en esta galaxia.','img/foto1.jp'],
 ['Mi vida','Contigo todo tiene sentido. Gracias por ser mi lugar favorito.',''],
 ['Contigo', 'A tu lado, hasta los momentos más simples se vuelven especiales. Me encanta compartir mi vida contigo.',''],
 ['Siempre', 'Quiero seguir compartiendo mis días contigo, apoyarte, cuidarte y amarte hoy y siempre.',''],
@@ -70,7 +70,7 @@ const WS=[
 ['Mi hogar', 'No importa dónde estemos, si estoy contigo, siento que estoy en casa. Tus abrazos son mi lugar favorito.',''],
 ['Mi estrella', 'Eres esa persona especial que llegó a mi vida para hacerla más bonita. Me encanta tenerte a mi lado.',''],
 ['Gracias', 'Gracias por cada sonrisa, cada abrazo y cada momento bonito. Gracias por estar en mi vida y hacerla más feliz.',''],
-['Eres todo', 'Eres todo lo que quiero y todo lo que deseoo.','img/foto3.jpeg']
+['Eres todo', 'Eres todo lo que quiero y todo lo que deseoo.','']
 ].map((d,i)=>({w:d[0],m:d[1],r:20+(i%3)*9+R()*4,a:i*0.7,y:(R()-.5)*14,img:d[2]||'',sx:0,sy:0,hw:40}));
 function ph(i){const c=document.createElement('canvas');c.width=400;c.height=300;const q=c.getContext('2d');
 const gr=q.createRadialGradient(200,150,10,200,150,260);gr.addColorStop(0,'#ffc8dd');gr.addColorStop(1,'#8f7bd1');q.fillStyle=gr;q.fillRect(0,0,400,300);
